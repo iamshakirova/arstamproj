@@ -63,33 +63,27 @@
                 <button id="close-button" onclick="closeForm()">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <form action="#" id="form" class="form_body">
+                <form action="sendmail.php" method="POST" id="form" class="form_body">
                     <h1 class="form_title">Заполните форму</h1>
                     <p class="form_title">Наш менеджер свяжется с Вами и подготовит расчет!</p>
                     <div class="form_item">
-                        <!-- <label for="formName" class="form_label">Имя*</label> -->
                         <input id="forName" type="text" name="name" class="form_input _req" placeholder="Имя*">
                     </div>
                     <div class="form_item">
-                        <!-- <label for="formEmail" class="form_label">Номер телефона*</label> -->
-                        <input id="forPhone" type="number" name="number" class="form_input _req" placeholder="Телефон*">
+                        <input id="forPhone" type="tel" name="number" class="form_input _req" placeholder="Телефон*">
                     </div>
                     <div class="form_item">
-                        <!-- <label for="formEmail" class="form_label">E-mail*</label> -->
                         <input id="forEmail" type="email" name="email" class="form_input _req _email" placeholder="E-mail*">
                     </div>
                     <div class="file_item">
-                        <!-- <div class="form_label">Можете прикрепить <br> Вашу заявку для расчета</div> -->
                         <div class="file">
                             <div class="file_item">
                                 <input id="formImage" accept=".jpeg, .png, .gif, jpg" type="file" name="image" class="file_input">
                                 <div class="file_button">Можете прикрепить Вашу заявку для расчета</div>
                             </div>
-                            <!-- <div id="formPreview" class="file_preview"></div> -->
                         </div>
                         <button type="submit" class="form_button">Отправить</button>
                     </div>
-                    
                 </form>
             </div>
         </div>

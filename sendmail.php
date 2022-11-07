@@ -2,42 +2,30 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'phpmailer/src/Exception.php';
-    require 'phpmailer/src/PHPMailer.php';
+    require "phpmailer/src/Exception.php";
+    require "phpmailer/src/PHPMailer.php";
     
     $mail = new PHPMailer(true);
-    $mail->CharSet = 'UTF-8';
-    $mail->setLanguage('ru','phpmailer/language/');
-    $mail->IsHTML(true);
+    $mail->CharSet = "UTF-8";
 
-    $mail->setFrom('Новый пользователь');
-    $mail->addAddress ('shakirova.2797@mail.ru');
-    $mail->Subject = 'Привет!';
+    $name = $_POST["name"];
+    $number = $_POST["number"];
+    $email = $_POST["email"];
+    $image = $_POST["image"];
 
-    $body ='<h1>Новая заявка</h1>';
+    $body = $name . ' ' . $number . ' ' . $email . ' ' . $image;
+    $theme = "[Заявка с формы]";
 
-    if(trim(!empty($_POST['name']))){
-        $body.='<p><strong>Имя:</strong>'.$_POST['name'].'</p>';
-    }
-    if(trim(!empty($_POST['email']))){
-        $body.='<p>strong>E-mail:</strong> '.$_POST ['email'].'</p>';
-    }
-    if(trim(!empty($_POST['number']))){
-        $body.='<p>strong>Номер телефона:</strong>'.$_POST ['number'].'</p>';
-    }
+    $mail->addAddress("shakirova.2797@mail.ru");
 
-
+    $mail->Subject = $theme;
     $mail->Body = $body;
 
+    $mail->send();
 
-    if (!$mail->send()) {
-        $message ='Ошибка';
-    } else {
-        $message ='Данные отправлены!';
-    }
-    $response =['message' => $message];
 
-    header ('Content-type: application/json');
-    echo json_encode ($response);
 
 ?>
+
+
+
