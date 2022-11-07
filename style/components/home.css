@@ -1,0 +1,100 @@
+.home{
+    padding: 130px 0;
+    background-image: url('../../images/back.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom: 1px solid grey;
+    position: relative;
+}
+.home-button{
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    cursor: pointer;
+}
+.home-inner{
+    background-image: url('../../images/Baner_pozharnye_shkafy_600x500.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 450px;
+}
+.home-inner{
+    position: relative;
+}
+.home-inner>img{
+    width: 450px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    z-index: 1;
+}
+.home-inner h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+.home-inner h1>span{
+    background-color: white;
+    text-transform: uppercase;
+}
+.home-inner h1>span>b{
+    font-size: 50px;
+    font-weight: 600;
+}
+.sale{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #860d0d;
+    color: #ffff;
+    display: block;
+    border: none;
+    margin: 30px 0;
+}
+@media(max-width:700px){
+    .home-inner>h1{
+        font-size: 30px;
+    }
+    .home-inner>h1>span>b{
+        font-size: 30px;
+    }
+    .home-inner{
+        background-position: right;
+        background-size: 300px;
+        background-position-y: 100%;
+    }
+    .home-button.call{
+        display: none;
+    }
+}
+@media(max-width:445px){
+    .home{
+        padding: 60px 0 30px 0;
+    }
+    .home-inner>h1{
+        font-size: 20px;
+        margin-bottom: 180px;
+    }
+    .home-inner>h1>span>b{
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .count-button.call{
+        width: 190px;
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .home-inner{
+        background-position: right;
+        background-size: 200px;
+        background-position-y: 55%;
+    }
+    .sale {
+        font-size: 15px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}

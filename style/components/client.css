@@ -1,0 +1,143 @@
+.cl{
+    display: flex;
+    justify-content: center;
+}
+.clients-details{
+    width: 40%;
+}
+.card-img{
+    width: 50%;
+    align-items: center;
+}
+.card-img img{
+    width: 100%;
+}
+.clients-details img{
+    width: 80px;
+    margin-bottom: 40px;
+}
+.clients-details h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.clients-details ul{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.clients-details li{
+    line-height: 2;
+}
+.clients-details li:hover{
+    text-decoration: underline;
+    transition: .3s;
+}
+.prod-img{
+    width: 50%;
+    margin: 20px auto;
+    margin-top: 30px;
+}
+.prod-img img{
+    width: 30%;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.prod-img>i{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+}
+.prod-img>.fa-angle-right{
+    right: -30px;
+}
+.prod-img>.fa-angle-left{
+    left: -30px;
+}
+/* .clients-inner {
+    position: relative;
+    background-image: url('../../images/карта.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+    background-position-y: top;
+} */
+.clients{
+    background-color: rgb(241, 238, 238);
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+@media(max-width:1200px){
+    .prod-img img{
+        height: 200px;
+        margin-right: 10px;
+    }
+}
+@media(max-width:1000px){
+    .prod-img {
+        width: 80%;
+    }
+}
+@media(max-width:900px){
+   .cl{
+        flex-wrap: wrap;
+   }
+   .clients-details{
+        width: 60% ;
+        text-align: center;
+        margin-bottom: 20px;
+   }
+   .card-img{
+        width: 60%;
+   }
+   .prod-img {
+        width: 55%;
+    }
+    .prod-img img {
+        height: 150px;
+    }
+}
+@media(max-width:700px){
+    .prod-img {
+         width: 44%;
+     }
+     .prod-img img {
+         height: 150px;
+     }
+}
+@media(max-width:600px){
+    .prod-img {
+         width: 30%;
+     }
+     .prod-img img {
+         height: 150px;
+     }
+    .clients-details h1{
+        font-size: 15px;
+    }
+    .clients-details ul{
+        font-size: 13px;
+    }
+}
+@media(max-width:450px){
+    .prod-img {
+         width: 35%;
+     }
+     .prod-img img {
+         height: 160px;
+     }
+}
+@media(max-width:450px){
+     .prod-img img {
+        height: 130px;
+     }
+}
+@media(max-width:350px){
+    .prod-img img {
+       height: 120px;
+    }
+}

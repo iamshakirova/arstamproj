@@ -1,0 +1,27 @@
+.body , html{
+    overflow-x: hidden;
+    margin: 0;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.call{
+    width: 195px;
+    height: 46px;
+    border: 2px solid #860d0d;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.call:hover{
+    background-color:#860d0d;
+    transition: .3s;
+    color: white;
+    border: none;
+}

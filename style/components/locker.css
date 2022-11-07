@@ -1,0 +1,118 @@
+.locker{
+    padding-top: 90px;
+    background-image: url('../../images/abstr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom;
+    background-position-y:top ; */
+}
+.locker-inner h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.locker-inner h2{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.locker-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('../../images/metal-lock.png');
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+    background-position-y: 30%;
+    background-size: 400px;
+    width: 100%;
+}
+.lock{
+    width: 40%;
+    margin-bottom: 100px;
+}
+.first{
+    margin-bottom: 350px;
+}
+.lock p{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 120px;
+    align-items: center;
+}
+.lock h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+.lock i{
+    color: black; 
+    font-size: 36px;
+    position: absolute;
+    padding: 30px;
+    background-color: rgb(202, 29, 29);
+    border-radius: 20px;
+    color: #fff;
+}
+.lock i:hover{
+    transform: rotate(45deg); 
+}
+.lock-img img{
+    width: 20%;
+}
+@media(max-width:900px){
+    .locker-details{
+        background-size: 300px;
+    }
+}
+@media(max-width:700px){
+    .lock{
+        width: 50%;
+    }
+    .locker-details{
+        background-position-y: top;
+    }
+    .lock{
+        margin-bottom: 20px;
+    }
+    .first{
+        margin-top: 300px;
+    }
+    .lock p{
+        margin-left: 50px;
+    }
+    .lock i{
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 2px;
+    }
+}
+@media(max-width:500px){
+    .lock{
+        width: 90%;
+    }
+    .locker-inner>h2{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .locker-inner h1{
+        font-size: 20px;
+    }
+    .first:nth-child(1){
+        margin-top: 210px;
+    }
+    .first:nth-child(2){
+        margin-top: 20px;
+    }
+    .lock p{
+        font-size: 15px;
+    }
+    .locker-details{
+        background-size: 200px;
+    }
+}
+
+

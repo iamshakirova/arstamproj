@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a615388c88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="style/all.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i onclick="showFirstAdapt()" class="fa-solid fa-bars"></i>
+            <img src="images/logo.jpeg" alt="">
+        </div>
+        <div class="head-menu">
+            <a data-goto=".equipment" href="#" class="menu_link">Каталог</a>
+            <a data-goto=".form" href="#" class="menu_link">О нас</a>
+            <a data-goto=".clients" href="#" class="menu_link">Отзывы</a>
+            <a data-goto=".advantages" href="#" class="menu_link">Преимущества</a>
+            <a data-goto=".footer" href="#" class="menu_link">Контакты</a>
+        </div>
+        <div class="numbers">
+            <a href="">+7 777 166 57 53</a>
+            <a href="">+7 707 178 69 65</a>
+            <a href="">+7 747 899 39 27</a>
+            <a href="">essfire-kz@mail.ru</a>
+            <a href="">essfirekz@gmail.com</a>
+        </div>
+        <div class="mobileHeader" id="modalAdapt">
+            <ul class="mobile__nav">
+                <li><a data-goto=".equipment" href="#" class="menu_link">Каталог</a></li>
+                <li><a data-goto=".form" href="#" class="menu_link">О нас</a></li>
+                <li><a data-goto=".clients" href="#" class="menu_link">Отзывы</a></li>
+                <li><a data-goto=".advantages" href="#" class="menu_link">Преимущества</a></li>
+                <li><a data-goto=".footer" href="#" class="menu_link">Контакты</a></li>
+                <button id="close-btn" onclick="closeFirstAdapt()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </ul>
+            <div class="mobile__contact">
+                <a href="">+7 777 166 57 53</a>
+                <a href="">+7 707 178 69 65</a>
+                <a href="">+7 747 899 39 27</a>
+                <a href="">essfire-kz@mail.ru</a>
+                <a href="">essfirekz@gmail.com</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-inner container">
+            <!-- <img src="images/Baner_pozharnye_shkafy_600x500.webp" alt=""> -->
+            <button class="home-button call">Запрос звонка</button>
+            <h1><span>Производим и реализуем <br><b>системы <br> противопожарной <br>безопасности </b></span></h1>
+            <button class="sale">Скидка на опт до 30%</button>
+            <button class="count-button call" onclick="showForm()">Рассчитать стоимость</button>
+        </div>
+        <div class="wrapper" id="form-window">
+            <div class="form-window">
+                <button id="close-button" onclick="closeForm()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <form action="#" id="form" class="form_body">
+                    <h1 class="form_title">Заполните форму</h1>
+                    <p class="form_title">Наш менеджер свяжется с Вами и подготовит расчет!</p>
+                    <div class="form_item">
+                        <!-- <label for="formName" class="form_label">Имя*</label> -->
+                        <input id="forName" type="text" name="name" class="form_input _req" placeholder="Имя*">
+                    </div>
+                    <div class="form_item">
+                        <!-- <label for="formEmail" class="form_label">Номер телефона*</label> -->
+                        <input id="forPhone" type="number" name="number" class="form_input _req" placeholder="Телефон*">
+                    </div>
+                    <div class="form_item">
+                        <!-- <label for="formEmail" class="form_label">E-mail*</label> -->
+                        <input id="forEmail" type="email" name="email" class="form_input _req _email" placeholder="E-mail*">
+                    </div>
+                    <div class="file_item">
+                        <!-- <div class="form_label">Можете прикрепить <br> Вашу заявку для расчета</div> -->
+                        <div class="file">
+                            <div class="file_item">
+                                <input id="formImage" accept=".jpeg, .png, .gif, jpg" type="file" name="image" class="file_input">
+                                <div class="file_button">Можете прикрепить Вашу заявку для расчета</div>
+                            </div>
+                            <!-- <div id="formPreview" class="file_preview"></div> -->
+                        </div>
+                        <button type="submit" class="form_button">Отправить</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="equipment section-padding">
+        <div class="equipment-inner container">
+            <h1>Противопожарное оборудование</h1>
+            <div class="eqp-products">
+                <div class="eqp">
+                    <img src="images/system1.webp" alt="">
+                    <h1>Система противопожарной сигнализации</h1>
+                    <h2>В состав автоматических установок пожарной сигнализации входят:</h2>
+                    <ul>
+                        <li>датчики для измерения температуры и задымлённости воздуха в помещении,</li>
+                        <li>извещает для обработки, протоколирования данных и формирования сигнала тревоги,</li>
+                        <li>контроллер</li>
+                    </ul>
+                </div>
+                <div class="eqp">
+                    <img src="images/invent.jpeg" alt="">
+                    <h1>Пожарный инвентарь</h1>
+                    <p><b>Пожарный инвентарь</b> - это комплекс инструментов и средств первичного пожаротушения, необходимых для борьбы с пожаром на его ранней стадии. Несмотря на то, что определение пожарного инвентаря довольно общее, охватывающее немалую часть пожарного оборудования, в данной статье мы рассмотрим исключительно ту часть инвентаря, которым комплектуются пожарные щиты и стенды.</p>
+                </div>
+                <div class="eqp">
+                    <img src="images/shkaf3.jpeg" alt="">
+                    <h1>Пожарный шкаф</h1>
+                    <p><b>Пожарный шкаф</b> –  предназначен для размещения и хранения первичных средств пожаротушения и комплекта пожарного крана. Пожарные шкафы размещаются в различных зданиях и сооружениях, имеющих внутренний противопожарный водопровод. Модель пожарного шкафа, как правило, определяется месторасположением пожарного крана. Пожарные шкафы бывают навесные и встроенные, для пожарного крана и огнетушителей, открытые и закрытые - дверцы с остеклением или сплошные металлические</p>
+                </div>
+                <div class="eqp">
+                    <img src="images/pesok4.jpeg" alt="">
+                    <h1>Противопожарный ящик для песка</h1>
+                    <p><b>Пожарный ящик</b> для песка является одним из средств первичного пожаротушения. Их устанавливают в комплекте к пожарным щитам различных видах помещений для того, чтобы в случае возгорания любой человек без специальных знаний мог им быстро воспользоваться. Давайте посмотрим, как его правильно устанавливать и как эффективно будет его использование в помещении.</p>
+                </div>
+                <div class="eqp">
+                    <img src="images/pozharnye-stvoly-5.jpeg" alt="">
+                    <h1>Пожарный ствол</h1>
+                    <p><b>Пожарные стволы </b> – это один из основных видов пожарного оборудования. Пожарный ствол представляет собой специальное устройство, которое предназначено для формирования и дальнейшего направления струи воды и различных огнетушащих веществ к месту пожара. </p>
+                </div>
+                <div class="eqp">
+                    <img src="images/Sprinklernyie-orositeli6.jpeg" alt="">
+                    <h1>Оросители</h1>
+                    <p><b>Оросители</b> эффективно защитят вас от пожаров. Устройства распыляют воду и быстро уничтожают воспламенения. Приборы используются в автоматических установках пожаротушения.</p>
+                </div>
+            </div>
+            <div class="det-acc">
+                <div class="accordion">
+                    <h1>Аксессуары</h1>
+                    <div class="contentBx">
+                        <div class="label">Огнетушитель порошковый</div>
+                        <div class="content">
+                            <p>Это огнетушитель, в качестве заряда которого используется огнетушащий порошок. Огнетушители, относящиеся по виду огнетушащего вещества к порошковым, заслуживают особого внимания, ввиду своей универсальности. Порошковые огнетушители имеют разный объем и разное назначение, используются для тушения пожаров в помещениях и на открытом воздухе, гасят в том числе загоревшееся электрооборудование.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="label">Пожарные напорные рукава</div>
+                        <div class="content">
+                            <p>Применяются при формировании стендов и щитов на различных объектах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="label">Пожарный гидрант</div>
+                        <div class="content">
+                            <p>Это оборудование, решающее задачу забора воды пожарным транспортом из систем водоснабжения при возникновении возгораний и их ликвидации.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="label">Мотопомпа</div>
+                        <div class="content">
+                            <p>Это автономный, передвижной насос на базе двигателя  внутреннего сгорания различной мощности, предназначенный для перекачки  воды или другой жидкости. Сфера применения мотопомпы чрезвычайно широка.  Мотомпа незаменима для перекачки и отсоса различных жидкостей в  сельском хозяйстве, где мотопомпа применяется в деле орошения земель.  Водяная помпа зарекомендовала себя в осушении водоемов, бассейнов,  колодцев, резервуаров. Также водяная помпа востребована при устройстве  системы водоснабжения, водяные помпы используются при тушении пожаров.</p>
+                        </div>
+                    </div>
+                    <button class="calc call">Калькулятор</button>
+                </div>
+                <div class="guarantee">
+                    <ul>
+                        <li>Гарантия 12 мес.</li>
+                        <li>Доставка РК</li>
+                        <li>Смотрите каталог продукции</li>
+                        <button class="sert call">Сертификаты продукции</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form section-padding">
+        <div class="form-inner container">
+            <div class="modal-window" id="modal">
+                <form class="modal-content">
+                    <h1>ЗАПОЛНИТЕ ФОРМУ И МЫ ПОДГОТОВИМ</h1>
+                    <p>индивидуальное коммерческое предложение</p>
+                    <input type="text" placeholder="Имя:" name="name" id="">
+                    <input type="text" placeholder="Телефон:" name="phone" id="">
+                    <input type="text" placeholder="Комментарий:">
+                    <button class="send call">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="locker">
+        <div class="locker-inner container">
+            <h1>Производство и поставка металлических шкафов </h1>
+            <h2>Вся реализуемая продукция изготавливается в Республике Казахстан <br>
+                с использованием иностранного сырья высшей категории. <br>
+                Соответственно мы предоставляем Сертификат качества и Сертификат
+                 СТ-КЗ.</h2>
+            <div class="locker-details">
+                <div class="lock first">
+                    <i class="fa-solid fa-lock"></i>
+                    <p>Шкаф металлический</p>
+                </div>
+                <div class="lock first">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <p>Подготовка документов для прохождения Технического Надзора</p>
+                </div>
+                <div class="lock">
+                    <i class="fa-solid fa-stamp"></i>
+                    <p>Сертификаты CT-KZ на выпускаемый товар с долями Казахстанского содержания более 85%</p>
+                </div>
+                <div class="lock">
+                    <i class="fa-regular fa-handshake"></i>
+                    <p>Сопровождение объектов на весь гарантийный срок</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="forma ">
+        <div class="forma-inner container">
+            <h1>ЗАПОЛНИТЕ ФОРМУ И МЫ ПОДГОТОВИМ</h1>
+            <p>индивидуальное коммерческое предложение</p>
+            <div class="secondm modal-window">
+                <form class="numbers mod">
+                    <!-- <img src="images/logo.jpeg" alt=""> -->
+                    <h1>Наши Контакты:</h1>
+                    <a href="">+7 777 166 57 53</a>
+                    <a href="">+7 707 178 69 65</a>
+                    <div class="emoji">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <a href="">+7 747 899 39 27</a>
+                    <a href="">essfire-kz@mail.ru</a>
+                    <a href="">essfirekz@gmail.com</a>
+                    <div class="emojiSec">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </form>
+                <form class="second modal-content">
+                    <input type="text" placeholder="Имя:" name="name" id="">
+                    <input type="text" placeholder="Телефон:" name="phone" id="">
+                    <button class="send call">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="clients section-padding">
+        <div class="clients-inner container">
+            <div class="cl">
+                <div class="clients-details">
+                    <img src="images/sticker 2.webp" alt="">
+                    <h1>ЗА ВРЕМЯ РАБОТЫ <br> НАШИМИ КЛИЕНТАМИ СТАЛИ:</h1>
+                    <ul>
+                        <li>ТОО СПК ДорСтрой</li>
+                        <li>АО KASPI BANK</li>
+                        <li>ТОО БВБ Альянc</li>
+                        <li>ТОО Tau Vent</li>
+                        <li>ТОО Алым Инжиниринг</li>
+                        <li>и др.</li>
+                    </ul>
+                </div>
+                <div class="card-img">
+                    <img src="images/карта.png" alt="">
+                </div>
+            </div>
+            <div class="prod-img">
+                <img src="images/photo_2022-11-01 23.14.58.jpeg" alt="">
+                <img src="images/photo_2022-11-01 23.15.03.jpeg" alt="">
+                <img src="images/photo_2022-11-01 23.15.06.jpeg" alt="">
+                <img src="images/photo_2022-11-01 23.15.08.jpeg" alt="">
+                <img src="images/photo_2022-11-01 23.15.10.jpeg" alt="">
+                <img src="images/photo_2022-11-01 23.15.12.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="advantages section-padding">
+        <div class="advantages-inner container">
+            <h1>Наши преимущества</h1>
+            <p>Мы ценим своих клиентов и поэтому используем оборудование и комплектующие только
+                тех производителей, качество товаров которых не вызывает сомнений и нареканий.
+                Мы принципиально не используем компоненты в качестве которых мы не уверены.
+                Индивидуальный подход к задаче клиента, позволяет разрабатывать решения максимально 
+                соответствующие потребностям заказчика. </p>
+                <div class="adv-img">
+                    <div class="adv">
+                        <img src="images/знак корзины.jpeg" alt="">
+                        <h1>Широта ассортимента</h1>
+                        <p>У нас можно приобрести свыше 2000 наименований товаров от лучших производителей.</p>
+                    </div>
+                    <div class="adv">
+                        <img src="images/красный-большой.jpeg" alt="">
+                        <h1>Высокие стандарты качества</h1>
+                        <p>Вся продукция прошла всесторонние испытания, полную сертификацию и другие исследования.</p>
+                    </div>
+                    <div class="adv">
+                        <img src="images/красочный грузовик.jpeg" alt="">
+                        <h1>Оперативная доставка товара</h1>
+                        <p>Мы доставим товар в любой регион Казахстана в кратчайшие сроки. Сопровождение заказа до получения. </p>
+                    </div>
+                    <div class="adv">
+                        <img src="images/stickerr.webp" alt="">
+                        <h1>Грамотные менеджера</h1>
+                        <p>Наши менеджера являются экспертами по товарам.У нас Вам всегда предложат несколько решений Вашей задачи.</p>
+                    </div>
+                    <div class="adv">
+                        <img src="images/price.png" alt="">
+                        <h1>Низкие цены</h1>
+                        <p>Низкая стоимость. Цены на товары у нас ниже рыночной цены.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="footer section-padding">
+        <div class="footer-inner container">
+            <div class="address">
+                <p>Республика Казахстан, <br> г.Алматы, улица Фадеева 38</p>
+                <div class="numbers foot">
+                        <a href="">+7 777 166 57 53</a>
+                        <a href="">+7 707 178 69 65</a>
+                        <a href="">+7 747 899 39 27</a>
+                        <a href="">essfire-kz@mail.ru</a>
+                        <a href="">essfirekz@gmail.com</a>
+                        <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <h2>Остались вопросы? <br>Задайте их менеджеру!</h2>
+                <button class="foott call">Задать</button>
+            </div>
+            <div class="sertificates">
+                <h1>Вся продукция производится по ГОСТ и имеет подтверждающие СЕРТИФИКАТЫ</h1>
+                <img src="images/sert.jpeg" alt="" id="sert1">
+            </div>
+            <div class="foot-img">
+                <img src="images/adress.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

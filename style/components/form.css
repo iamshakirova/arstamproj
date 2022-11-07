@@ -1,0 +1,210 @@
+.form{
+    background-image: url('../../images/back-photo.jpg');
+    background-repeat: no-repeat;
+    padding: 20px 20px 30px 0;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+}
+.forma{
+    background-image: url('../../images/protivopozharnoe-oborudovanie-710x470.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 100px 0;
+}
+.form-inner h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.forma-inner h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.forma-inner p{
+    font-size: 25px;
+    font-weight:600;
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.form-inner p{
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+.modal-window{
+   margin-left:150px;
+} 
+.secondm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 160px;
+    margin-left: 20px;
+}
+.modal-content{
+    width: 40%;
+    /* height: 350px; */
+    background-color: #fff;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(143, 20, 20, 0.3)
+}
+.second{
+    width: 30%;
+    /* margin-top: 50px; */
+    /* z-index: 20; */
+}
+.modal-content input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border: 1px solid #e6e9ec;
+    outline: none;
+}
+.active-modal{
+    display: flex;
+}
+.mod{
+    border-left: none;
+    width: 20%;
+    position: relative;
+    align-items: center;
+    margin-top: -10%;
+}
+.emoji i{
+    position: absolute;
+    top: 50%;
+    left: 150%;
+} 
+.emojiSec{
+    position: absolute;
+    top: 80%;
+    left: 150%;
+}
+.mod>h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.mod>img{
+    width: 100%;
+    margin-top: 50px;
+}
+.send{
+    width: 100%;
+}
+.numbers i{
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 20px;
+    background: #860d0d;
+    color: white;
+}
+@media(max-width:930px){
+    .modal-content{
+        width: 50%; 
+    }
+    .modal-window{
+        margin-left: 10px;
+    }
+}
+@media(max-width:965px){
+    .mod{
+        width: 30%;
+    }
+}
+@media(max-width:750px){
+    .secondm{
+        flex-wrap: wrap;
+    }
+    .mod{
+        width: 60%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .second{
+        width: 50%;
+    }
+    .emoji i{
+        left: 120%;
+    } 
+    .emojiSec{
+        left: 120%;
+    }
+    .forma{
+        background-size:50%;
+        background-position:right;
+        background-position-y: bottom;
+    }
+    .forma-inner p{
+        margin-bottom: 10px;
+    }
+    .modal-content{
+        width: 70%;
+    }
+}
+@media(max-width:700px){
+    .mod{
+        display: flex;
+    }
+    .forma-inner h1{
+        font-size: 20px;
+    }
+    .forma-inner p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:450px){
+    .mod{
+        width: 70%;
+    }
+    .second{
+        width: 70%;
+    }
+    .form-inner p {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .form-inner h1{
+        font-size: 15px;
+    }
+    .forma-inner p {
+        margin-bottom: 10px;
+    }
+    .forma-inner h1{
+        font-size: 15px;
+    }
+    .forma-inner p{
+        font-size: 15px;
+    }
+    .emoji i{
+        left: 110%;
+    } 
+    .emojiSec{
+        left: 110%;
+    }
+    .modal-content input{
+        padding: 10px;
+    }
+    .send.call{
+        height: 33px;
+        border-radius: 10px;
+    }
+}
+@media(max-width:550px){
+    .modal-content{
+        width: 80%;
+    }
+    .form{
+        background-size: 90%;
+        background-position-y: bottom;
+        background-position-x: right;
+    }
+}
