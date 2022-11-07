@@ -22,9 +22,6 @@
     $mail->Body = $body;
 
     $mail->send();
-
-
-
 ?>
 
 
